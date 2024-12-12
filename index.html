@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUBANJA ELIJAH ELDRED - Final Exam</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Glowing effect for navigation buttons */
+        .btn-glow {
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.7);
+            transition: box-shadow 0.3s ease;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 25px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
+        }
+
+        /* Background and general styling */
+        body {
+            background-image: url('ty.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .image-container {
+            text-align: center;
+            display: none; /* Hide the image initially */
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(45deg, #ff5733, #28a745); /* Gradient background */
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1:hover {
+            text-shadow: 0 0 30px rgba(255, 255, 0, 1), 0 0 50px rgba(255, 255, 0, 1);
+            transition: text-shadow 0.5s ease;
+        }
+
+        /* Your Details Section Styling */
+        .your-details {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .your-details h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff5733;
+        }
+
+        .your-details li {
+            font-size: 1.1rem;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        /* Website Links Styling */
+        .website-links {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .website-links h5 {
+            font-size: 1.5rem;
+            color: #ff5733;
+            margin-bottom: 15px;
+        }
+
+        .website-links ul li {
+            padding: 8px 0;
+        }
+
+        .website-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .website-links a:hover {
+            color: #ff5733;
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        /* Rotating the links horizontally */
+        .website-links ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            animation: rotateLinks 15s linear infinite;
+        }
+
+        @keyframes rotateLinks {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        /* Profile Photo Flashing Light Effect */
+        .profile-photo {
+            position: relative;
+            animation: flash 1s infinite alternate;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image fits the space */
+            border-radius: 50%;
+        }
+
+        @keyframes flash {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 0, 1);
+            }
+            100% {
+                box-shadow: 0 0 25px rgba(255, 255, 0, 0.7);
+            }
+        }
+
+        /* Buttons styling */
+        .btn-prev, .btn-next {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-prev:hover, .btn-next:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 15px;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <div class="container py-5">
+        <!-- Header Section -->
+        <header class="text-center mb-4">
+            <h1>KUBANJA ELIJAH ELDRED - Final Exam</h1>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="row mb-4">
+            <div class="col-md-6 text-center">
+                <!-- Profile Photo Placeholder with Flashing Effect -->
+                <div class="profile-photo-wrapper" style="width: 300px; height: 300px;">
+                    <img src="my photo.jpg" alt="Profile Photo" class="profile-photo">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Personal Details Section -->
+                <div class="your-details">
+                    <h3>Your Details</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Name:</strong> KUBANJA ELIJAH ELDRED</li>
+                        <li><strong>Reg No:</strong> 24/BSE/BU/R/0012</li>
+                        <li><strong>Exam No:</strong> 24SEM/BU/Exam 2324</li>
+                        <li><strong>Email:</strong> kubanjaelijah2037@gmail.com</li>
+                        <li><strong>Phone Contact:</strong> +256 700290157, +256 788577092</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Container -->
+        <div class="image-container mb-4">
+            <img id="imageDisplay" src="" alt="Image" class="img-fluid rounded shadow" style="width: 500px; height: auto;">
+        </div>
+
+        <!-- Image Navigation Buttons -->
+        <div class="text-center mb-4">
+            <button id="prevBtn" class="btn btn-prev me-2 btn-glow shadow">Previous Image</button>
+            <button id="nextBtn" class="btn btn-next btn-glow shadow">Next Image</button>
+        </div>
+
+        <!-- Website Links Section -->
+        <div class="row mb-4">
+            <div class="col-md-6 website-links">
+                <h5>Personal Website Links:</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://eldred16.github.io/kubanjaelijaeldredpersonalweb1/" class="text-white text-decoration-underline">https://eldred16.github.io/kubanjaelijaeldredpersonalweb1/</a></li>
+                    <li><a href="https://kubanjaelijaheldred.netlify.app/" class="text-white text-decoration-underline">https://kubanjaelijaheldred.netlify.app/</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 website-links">
+                <h5>Organizational Website Links:</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://eldred16.github.io/kubanjaelijaheldredorganisationalwebsite/" class="text-white text-decoration-underline">https://eldred16.github.io/kubanjaelijaheldredorganisationalwebsite/</a></li>
+                    <li><a href="https://kubanjaelijaheldredorg.netlify.app/" class="text-white text-decoration-underline">https://kubanjaelijaheldredorg.netlify.app/</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p class="text-secondary">Footer: designed by KUBANJA ELIJAH ELDRED</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for Image Navigation -->
+    <script>
+        // List of image sources
+        const images = ['et1.jpg', 'et2.jpg', 'et3.jpg', 'ea.jpg'];
+        let currentImageIndex = 0;
+
+        // Image display element
+        const imageDisplay = document.getElementById('imageDisplay');
+
+        // Previous button click event
+        document.getElementById('prevBtn').addEventListener('click', function() {
+            currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+            imageDisplay.src = images[currentImageIndex];
+            document.querySelector('.image-container').style.display = 'block'; // Show the image container
+        });
+
+        // Next button click event
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+            imageDisplay.src = images[currentImageIndex];
+            document.querySelector('.image-container').style.display = 'block'; // Show the image container
+        });
+    </script>
+</body>
+</html>

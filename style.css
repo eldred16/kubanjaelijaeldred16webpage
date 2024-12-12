@@ -1,0 +1,58 @@
+/* External CSS file for additional styling */
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #f8f9fa;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Profile Image */
+img {
+    border: 5px solid #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0d6efd;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #adb5bd;
+}
